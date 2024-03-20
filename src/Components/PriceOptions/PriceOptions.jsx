@@ -3,47 +3,49 @@ import PriceOption from "../PriceOption/PriceOption";
 const PriceOptions = () => {
   const price_options = [
     {
-      id: "basic",
-      name: "Basic Membership",
-      price: 30,
-      features: [
+      "id": "basic",
+      "name": "Basic Membership",
+      "price": 30,
+      "features": [
         "Access to cardio equipment",
         "Access to weightlifting area",
         "Access to locker room",
-        "Limited group fitness classes",
-      ],
+        "Limited group fitness classes"
+      ]
     },
     {
-      id: "standard",
-      name: "Standard Membership",
-      price: 50,
-      features: [
+      "id": "standard",
+      "name": "Standard Membership",
+      "price": 50,
+      "features": [
         "Access to all facilities",
         "Unlimited group fitness classes",
         "Access to sauna and steam room",
-        "Personal training sessions available (additional cost)",
-      ],
+        "Personal training sessions available (additional cost)"
+      ]
     },
     {
-      id: "premium",
-      name: "Premium Membership",
-      price: 80,
-      features: [
+      "id": "premium",
+      "name": "Premium Membership",
+      "price": 80,
+      "features": [
         "Access to all facilities",
         "Unlimited group fitness classes",
         "Access to sauna and steam room",
         "Access to swimming pool",
-        "Discounts on personal training sessions",
-      ],
-    },
+        "Discounts on personal training sessions"
+      ]
+    }
   ];
 
   return (
     <div>
       <h1>Best Price Option In The Town</h1>
+      <div className="grid md:grid-cols-3 gap-3 text-white m-5">
       {
         price_options.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
       }
+      </div>
     </div>
   );
 };
