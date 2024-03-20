@@ -12,16 +12,19 @@ const Navbar = () => {
     { id: 4, name: "ProductDetails", path: "/products/:id" },
     { id: 5, name: "Contact", path: "/contact" },
   ];
+  // const handleMenuIcon = () => setOpen(!open); 
+  // console.log(open);
   return (
     <div>
       <nav>
+        {/* <div className=" md:hidden text-2xl" onClick={handleMenuIcon}></div> */}
         <div className=" md:hidden text-2xl" onClick={() => setOpen(!open)}>
           {
           
             open === true ? <ImCross /> : <HiMenuAlt1/>
           }
         </div>
-        <ul className="md:flex">
+        <ul className={`md:flex duration-1000 absolute md:static ${open ? 'top-8' : '-top-60'}`}>
           {routes.map((route) => (
             <Link key={route.id} route={route}></Link>
           ))}
