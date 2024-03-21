@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "brand": "Apple",
+    "model": "iPhone 13 Pro",
+    "color": "Graphite",
+    "storage": "128GB",
+    "price": 999
+  },
+  {
+    "id": 2,
+    "brand": "Samsung",
+    "model": "Galaxy S21 Ultra",
+    "color": "Phantom Black",
+    "storage": "256GB",
+    "price": 1199
+  },
+  {
+    "id": 3,
+    "brand": "Google",
+    "model": "Pixel 6 Pro",
+    "color": "Stormy Black",
+    "storage": "128GB",
+    "price": 899
+  },
+  {
+    "id": 4,
+    "brand": "OnePlus",
+    "model": "9 Pro",
+    "color": "Morning Mist",
+    "storage": "256GB",
+    "price": 1069
+  },
+  {
+    "id": 5,
+    "brand": "Xiaomi",
+    "model": "Mi 11 Ultra",
+    "color": "Ceramic White",
+    "storage": "256GB",
+    "price": 999
+  }
+]
